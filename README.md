@@ -1,10 +1,10 @@
 # -url-phishing-detector
 App web para detectar URLs maliciosas usando IA (XGBoost + FastAPI)
 
-#🛡️ URL Phishing Detector – App Web con Inteligencia Artificial
+🛡️ URL Phishing Detector – App Web con Inteligencia Artificial
 Este proyecto es una aplicación web desarrollada con FastAPI, Bootstrap y XGBoost que detecta URLs maliciosas usando modelos de machine learning.
 
-##🎯 Objetivo
+🎯 ##Objetivo
 Ayudar a los usuarios a verificar si una URL es potencialmente peligrosa, mostrando:
 
 La probabilidad de que sea maliciosa
