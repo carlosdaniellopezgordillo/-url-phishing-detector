@@ -1,51 +1,44 @@
-# -url-phishing-detector
-App web para detectar URLs maliciosas usando IA (XGBoost + FastAPI)
+# 🛡️ URL Phishing Detector – App Web con Inteligencia Artificial
 
-🛡️ URL Phishing Detector – App Web con Inteligencia Artificial
-Este proyecto es una aplicación web desarrollada con FastAPI, Bootstrap y XGBoost que detecta URLs maliciosas usando modelos de machine learning.
+Este proyecto es una aplicación web desarrollada con **FastAPI**, **Bootstrap** y **XGBoost** que detecta URLs maliciosas usando modelos de machine learning.
 
-🎯Objetivo
-Ayudar a los usuarios a verificar si una URL es potencialmente peligrosa, mostrando:
+## 🎯 Objetivo
+Ayudar a los usuarios a **verificar si una URL es potencialmente peligrosa**, mostrando:
+- La probabilidad de que sea maliciosa
+- Una breve explicación basada en características técnicas
+- Un historial con gráficas para análisis
 
-La probabilidad de que sea maliciosa
+## 🧠 ¿Cómo funciona?
+- Entrenamos un modelo XGBoost con características como:
+  - longitud de URL
+  - cantidad de dígitos y guiones
+  - uso de HTTPS
+  - subdominios sospechosos y acortadores
+- La app clasifica la URL y explica las razones.
 
-Una breve explicación basada en características
+## 🌐 Tecnologías usadas
+- `FastAPI` (API web)
+- `Jinja2` (HTML dinámico)
+- `Chart.js` (gráficos de resultados)
+- `XGBoost`, `pandas`, `scikit-learn` (modelo IA)
 
-Un historial con gráficas para análisis
+## 🚀 Despliegue en Render
+Puedes desplegar esta app gratis en [https://render.com](https://render.com) usando:
+- `Procfile`
+- `start.sh`
+- `requirements.txt`
 
-🧠 ¿Cómo funciona?
-Entrenamos un modelo de XGBoost con características como:
-
-longitud de URL
-
-cantidad de dígitos y guiones
-
-uso de HTTPS
-
-dominio sospechoso, subdominios, acortadores
-
-El modelo predice y justifica por qué una URL puede ser riesgosa.
-
-🌐 Tecnologías usadas
-FastAPI (API web)
-
-Jinja2 (plantillas HTML)
-
-Chart.js (visualización de datos)
-
-XGBoost, scikit-learn, pandas (modelo ML)
-
-🚀 Despliegue en Render
-Puedes desplegar esta app en https://render.com usando:
-
-start.sh
-
-Procfile
-
-requirements.txt
-
-📦 Instalación local
-
+## 📦 Instalación local
+```bash
 pip install -r requirements.txt
 uvicorn app:app --reload
-Luego abre: http://127.0.0.1:8000
+```
+
+Luego abre tu navegador en:  
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+## 📁 Archivos clave
+- `app.py`: servidor FastAPI
+- `formulario.html`: plantilla de resultados
+- `modelo_xgboost_urls.pkl`: modelo entrenado (debes colocarlo tú)
+- `urls.db`: base de datos de historial
