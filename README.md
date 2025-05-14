@@ -42,3 +42,15 @@ Luego abre tu navegador en:
 - `formulario.html`: plantilla de resultados
 - `modelo_xgboost_urls.pkl`: modelo entrenado (debes colocarlo tú)
 - `urls.db`: base de datos de historial
+
+## 👨‍💻 Autor
+
+Este proyecto fue desarrollado por **Carlos Daniel Lopez Gordillo** como parte del prototipo universitario **"Protección Digital: Cómo la IA combate el robo de identidad"** en la Universidad Nacional Rosario Castellanos, Licenciatura en Ciencias de Datos para Negocios.
+
+---
+
+## ✅ Licencia
+
+Este proyecto es de uso académico y educativo. No se autoriza su uso comercial sin consentimiento del autor.
+
+**© 2025 Carlos Daniel Lopez Gordillo**
